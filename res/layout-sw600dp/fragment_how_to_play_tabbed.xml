@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.PlaceholderFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/step1_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.168">
+
+        <TextView
+            android:id="@+id/step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Βήμα 1:"
+            android:textAlignment="center"
+            android:textSize="57sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/step1_layout"
+            app:layout_constraintVertical_bias="0.004" />
+
+        <TextView
+            android:id="@+id/upper_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Διαβασε την πρόταση και επιλεξε τι πιστευεις ότι θα απαντουσε ο κάθε παικτης."
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/step"
+            app:layout_constraintTop_toBottomOf="@+id/step" />
+
+
+        <ImageView
+            android:id="@+id/example1"
+            android:layout_width="544dp"
+            android:layout_height="127dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/upper_text"
+            app:srcCompat="@drawable/example1" />
+
+        <TextView
+            android:id="@+id/upper_text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="ενταξει τελειωσες; Πατα οκ."
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/step"
+            app:layout_constraintTop_toBottomOf="@+id/example1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

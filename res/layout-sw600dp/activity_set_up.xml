@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".SetUp">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Παίκτες:"
+        android:textSize="51sp"
+        app:layout_constraintStart_toStartOf="@+id/selection1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/leftMargin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/selection1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rightMargin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/selection1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/selection1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:animateLayoutChanges="true"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <TextView
+            android:id="@+id/p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector"
+            android:elevation="4dp"
+            android:paddingStart="31sp"
+            android:paddingTop="8dp"
+            android:paddingEnd="22sp"
+            android:paddingBottom="8dp"
+            android:text="3"
+            android:textAlignment="center"
+            android:textColor="@color/textview_selector"
+            android:textSize="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector"
+            android:elevation="4dp"
+            android:paddingStart="31sp"
+            android:paddingTop="8dp"
+            android:paddingEnd="31sp"
+            android:paddingBottom="8dp"
+            android:text="4"
+            android:textAlignment="center"
+            android:textColor="@color/textview_selector"
+            android:textSize="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/p1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/p3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector"
+            android:elevation="4dp"
+            android:paddingStart="31sp"
+            android:paddingTop="8dp"
+            android:paddingEnd="31sp"
+            android:paddingBottom="8dp"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="@color/textview_selector"
+            android:textSize="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/p2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/p4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector"
+            android:elevation="4dp"
+            android:paddingStart="31sp"
+            android:paddingTop="8dp"
+            android:paddingEnd="31sp"
+            android:paddingBottom="8dp"
+            android:text="6"
+            android:textAlignment="center"
+            android:textColor="@color/textview_selector"
+            android:textSize="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/p3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/p5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector"
+            android:elevation="4dp"
+            android:paddingStart="31sp"
+            android:paddingTop="8dp"
+            android:paddingEnd="31sp"
+            android:paddingBottom="8dp"
+            android:text="7"
+            android:textAlignment="center"
+            android:textColor="@color/textview_selector"
+            android:textSize="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/p4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/p6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector"
+            android:elevation="4dp"
+            android:paddingStart="31sp"
+            android:paddingTop="8dp"
+            android:paddingEnd="31sp"
+            android:paddingBottom="8dp"
+            android:text="8"
+            android:textAlignment="center"
+            android:textColor="@color/textview_selector"
+            android:textSize="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/p5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/players"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:animateLayoutChanges="true"
+        app:layout_constraintEnd_toStartOf="@+id/rightMargin"
+        app:layout_constraintStart_toEndOf="@+id/leftMargin"
+        app:layout_constraintTop_toBottomOf="@+id/dividerh">
+
+        <RelativeLayout
+            android:id="@+id/divider"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/divider"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="31sp"
+                android:animateLayoutChanges="true"
+                android:text="1"
+                android:textAlignment="center"
+                android:textSize="26dp" />
+
+            <EditText
+                android:id="@+id/name1"
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/t1"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:text=" "
+                android:textColor="@color/colorAccent"
+                android:textSize="32dp"
+                app:layout_constraintStart_toEndOf="@+id/t1" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/divider"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="31sp"
+                android:animateLayoutChanges="true"
+                android:text="2"
+                android:textAlignment="center"
+                android:textSize="26dp" />
+
+            <EditText
+                android:id="@+id/name2"
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/t2"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=" "
+                android:textColor="@color/colorAccent"
+                android:textSize="32dp"
+                app:layout_constraintStart_toEndOf="@+id/t2" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/divider"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout1">
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="31sp"
+                android:animateLayoutChanges="true"
+                android:text="3"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/name3"
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/t3"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=" "
+                android:textColor="@color/colorAccent"
+                android:textSize="32dp"
+                app:layout_constraintStart_toEndOf="@+id/t3" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@id/divider"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout2">
+
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="31sp"
+                android:animateLayoutChanges="true"
+                android:text="4"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/name4"
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/t4"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=" "
+                android:textColor="@color/colorAccent"
+                android:textSize="32dp"
+                app:layout_constraintStart_toEndOf="@+id/t4" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/divider"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout3">
+
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="31sp"
+                android:animateLayoutChanges="true"
+                android:text="5"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/name5"
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/t5"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=" "
+                android:textColor="@color/colorAccent"
+                android:textSize="32dp"
+                app:layout_constraintStart_toEndOf="@+id/t5" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@id/divider"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout4">
+
+            <TextView
+                android:id="@+id/t6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="31sp"
+                android:animateLayoutChanges="true"
+                android:text="6"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/name6"
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/t6"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=" "
+                android:textColor="@color/colorAccent"
+                android:textSize="32dp"
+                app:layout_constraintStart_toEndOf="@+id/t6" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/divider"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout5">
+
+            <TextView
+                android:id="@+id/t7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="31sp"
+                android:animateLayoutChanges="true"
+                android:text="7"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/name7"
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/t7"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=" "
+                android:textColor="@color/colorAccent"
+                android:textSize="32dp"
+                app:layout_constraintStart_toEndOf="@+id/t7" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@id/divider"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout6">
+
+            <TextView
+                android:id="@+id/t8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="31sp"
+                android:animateLayoutChanges="true"
+                android:text="8"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/name8"
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/t8"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=" "
+                android:textColor="@color/colorAccent"
+                android:textSize="32dp"
+                app:layout_constraintStart_toEndOf="@+id/t8" />
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/turns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="Γύροι:"
+        android:textSize="51sp"
+        app:layout_constraintStart_toStartOf="@+id/turn1"
+        app:layout_constraintTop_toBottomOf="@+id/players" />
+
+    <TextView
+        android:id="@+id/turn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector"
+        android:elevation="4dp"
+        android:paddingStart="31sp"
+        android:paddingTop="8dp"
+        android:paddingEnd="31sp"
+        android:paddingBottom="8dp"
+        android:text="2"
+        android:textAlignment="center"
+        android:textColor="@color/textview_selector"
+        android:textSize="32dp"
+        app:layout_constraintStart_toEndOf="@+id/leftMargin"
+        app:layout_constraintTop_toBottomOf="@+id/turns" />
+
+    <TextView
+        android:id="@+id/turn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector"
+        android:elevation="4dp"
+        android:paddingStart="31sp"
+        android:paddingTop="8dp"
+        android:paddingEnd="31sp"
+        android:paddingBottom="8dp"
+        android:text="4"
+        android:textAlignment="center"
+        android:textColor="@color/textview_selector"
+        android:textSize="32dp"
+        app:layout_constraintStart_toEndOf="@+id/turn1"
+        app:layout_constraintTop_toBottomOf="@+id/turns" />
+
+    <TextView
+        android:id="@+id/turn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector"
+        android:elevation="4dp"
+        android:paddingStart="31sp"
+        android:paddingTop="8dp"
+        android:paddingEnd="31sp"
+        android:paddingBottom="8dp"
+        android:text="8"
+        android:textAlignment="center"
+        android:textColor="@color/textview_selector"
+        android:textSize="32dp"
+        app:layout_constraintStart_toEndOf="@+id/turn2"
+        app:layout_constraintTop_toBottomOf="@+id/turns" />
+
+    <Button
+        android:id="@+id/okbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.6"
+        android:background="@color/colorAccent"
+        android:paddingHorizontal="55dp"
+        android:paddingVertical="15dp"
+        android:text="@android:string/ok"
+        android:textColor="@color/lightText"
+        android:textSize="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/dividerh"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selection1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.97" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

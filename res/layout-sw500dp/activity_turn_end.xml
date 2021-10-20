@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Scores">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Τέλος Γύρου"
+        android:textAlignment="viewStart"
+        android:textSize="59sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aποτελέσματα:"
+        android:textAlignment="center"
+        android:textSize="33sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.223" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/players"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintVertical_bias="0.26"
+        app:layout_constraintBottom_toTopOf="@+id/buttonsBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/player1"
+            android:layout_width="282dp"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:text="Παίκτης 1"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/score1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="128dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/player2"
+            android:layout_width="282dp"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/player1"
+            >
+
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:text="Παίκτης 2"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/score2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="128dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/player3"
+            android:layout_width="282dp"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/player2"
+            >
+
+            <TextView
+                android:id="@+id/name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:text="Παίκτης 3"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/score3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="128dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/player4"
+            android:layout_width="282dp"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/player3"
+            >
+
+            <TextView
+                android:id="@+id/name4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:text="Παίκτης 4"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/score4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="128dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/player5"
+            android:layout_width="282dp"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/player4"
+            >
+
+            <TextView
+                android:id="@+id/name5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:text="Παίκτης 5"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/score5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="128dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/player6"
+            android:layout_width="282dp"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/player5"
+            >
+
+            <TextView
+                android:id="@+id/name6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:text="Παίκτης 6"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/score6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="128dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/player7"
+            android:layout_width="282dp"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/player6"
+            >
+
+            <TextView
+                android:id="@+id/name7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:text="Παίκτης 7"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/score7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="128dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/player8"
+            android:layout_width="282dp"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/player7"
+            tools:visibility="gone">
+
+            <TextView
+                android:id="@+id/name8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:text="Παίκτης 8"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/score8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="128dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttonsBar"
+        android:layout_width="282dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="38dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="157dp"
+            android:layout_height="83dp"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/selectedBackground"
+            android:text="OK"
+            android:textAlignment="center"
+            android:textColor="@color/lightText"
+            android:textSize="58sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

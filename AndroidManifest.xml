@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.simosspyrou.test">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mov_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/mov_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".HowToPlayTabbed"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".TurnEnd" />
+
+
+        <!--//το id της εφαρμογής: ca-app-pub-9288806676990528~4457876069 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9288806676990528~4457876069" />
+
+        <activity android:name=".Scores" />
+        <activity android:name=".Gameplay" />
+        <activity android:name=".SetUp">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

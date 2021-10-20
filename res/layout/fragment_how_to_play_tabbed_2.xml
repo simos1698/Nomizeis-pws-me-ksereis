@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.PlaceholderFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/step1_layout"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.276">
+
+        <TextView
+            android:id="@+id/step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Βήμα 2:"
+            android:textAlignment="center"
+            android:textSize="29dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/step1_layout"
+            app:layout_constraintVertical_bias="0.004" />
+
+        <TextView
+            android:id="@+id/upper_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Τωρα που κλείδωσες, ρωτα τριγυρω και σημειωσε με τικ όσα μαντεψες σωστα. "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/step"
+            app:layout_constraintTop_toBottomOf="@+id/step" />
+
+
+        <ImageView
+            android:id="@+id/example1"
+            android:layout_width="310dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/upper_text"
+            app:srcCompat="@drawable/example2" />
+
+        <TextView
+            android:id="@+id/upper_text_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="τελειωνοντας τα τσεκαρισματα ξαναπατας οκ και είναι σειρά του επόμενου. Καλή τύχη!"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/step"
+            app:layout_constraintTop_toBottomOf="@+id/example1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
