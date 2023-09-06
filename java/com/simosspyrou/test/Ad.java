@@ -10,7 +10,6 @@ import com.google.android.gms.ads.MobileAds;
 class Ad extends Application {
 
     //test id: ca-app-pub-3940256099942544/1033173712
-    //MONETIZED id: ca-app-pub-9288806676990528/9717709745
 
     private static InterstitialAd interstitialAd;
 
